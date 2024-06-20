@@ -73,11 +73,35 @@ header{
     font-size: 0.8rem;
     font-weight:bold;
     cursor: pointer;
+    transition: scale 0.2 ease;
 }
+
+.action-btn:hover{
+    scale:1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale:0.55;
+}
+
+
+/*RESPONSIVE DESIGN BELOW*/
+
+
 
 /*MEDIA QUIERY MULTI SCREEN INFORMATION BELOW:*/
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
+    .navbar-links,
+    .navbar .action_btn{
+        display:none;
+    }
+
+    .navbar .toggle_btn{
+        display:block;
+        
+    }
     nav ul li {
         display: block;
         margin-bottom: 10px;
